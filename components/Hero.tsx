@@ -12,7 +12,7 @@ export function Hero() {
     { icon: <Facebook size={18} /> , label: 'Facebook', href: 'https://www.facebook.com/itsyourmahabub' },
     { icon: <Instagram size={18} /> , label: 'Instagram', href: 'https://www.instagram.com/itsmahabub/' },
     { icon: <Linkedin size={18} /> , label: 'LinkedIn', href: '#' },
-    { icon: <Youtube  size={18} /> , label: 'YouTube', href: '#' },
+    { icon: <Youtube  size={18} /> , label: 'YouTube', href: 'https://www.youtube.com/@itsmahabub' },
   ]
 
   return (
