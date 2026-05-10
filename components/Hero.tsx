@@ -5,11 +5,12 @@ import { Mail, MapPin, Phone, Globe, Facebook, Instagram, Linkedin, Youtube } fr
 import Link from 'next/link'
 import { fadeInUp, slideInLeft, slideInRight } from '@/lib/animations'
 import Image from 'next/image'
+import Typewriter from 'typewriter-effect';
 
 export function Hero() {
   const socialLinks = [
     { icon: <Facebook size={18} /> , label: 'Facebook', href: 'https://www.facebook.com/itsyourmahabub' },
-    { icon: <Instagram size={18} /> , label: 'Instagram', href: '#' },
+    { icon: <Instagram size={18} /> , label: 'Instagram', href: 'https://www.instagram.com/itsmahabub/' },
     { icon: <Linkedin size={18} /> , label: 'LinkedIn', href: '#' },
     { icon: <Youtube  size={18} /> , label: 'YouTube', href: '#' },
   ]
@@ -59,13 +60,13 @@ export function Hero() {
             className="space-y-2"
           >
             <p className="text-accent text-lg font-semibold">Hello, I&apos;m</p>
-            <h1 className="text-4xl md:text-6xl font-bold text-foreground leading-tight">
+            <h1 className="text-3xl md:text-6xl font-bold text-foreground leading-tight">
               <motion.span
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2, duration: 0.6 }}
                 viewport={{ once: true }}
-                className="block"
+                className="block text-3xl"
               >
                 MAHABUB
               </motion.span>
@@ -74,11 +75,12 @@ export function Hero() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3, duration: 0.6 }}
                 viewport={{ once: true }}
-                className="block"
+                className="block text-3xl"
               >
                 HOSSAIN ARAFAT
               </motion.span>
             </h1>
+             
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -86,7 +88,16 @@ export function Hero() {
               viewport={{ once: true }}
               className="text-accent text-2xl md:text-3xl font-italic"
             >
-              Social Media Manager
+              {/* Social Media Manager */}
+                <Typewriter
+                                                options={{
+                                                    strings:
+                                                        ['Social Media Manager', 'Content Creation', 'Community Engagement',
+                                                            'NexJs Developer'],
+                                                    autoStart: true,
+                                                    loop: true,
+                                                }}
+                                            />
             </motion.p>
           {/* Description */}
           <motion.p
