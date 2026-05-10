@@ -9,28 +9,25 @@ const experiences = [
     icon: Briefcase,
     title: 'Marketing Manager & Graphic Designer, Video Editor',
     company: 'Pineapple Exclusive',
-    period: '2023 - Present',
+    
     description: 'Manage social media platforms, create content, design posts and edit videos to promote brand awareness and sales.',
   },
   {
     icon: TrendingUp,
     title: 'Sales Executive',
     company: 'Unique Bangladesh',
-    period: '2022 - 2023',
     description: 'Promoted projects, handled client communication and supported digital marketing activities.',
   },
   {
     icon: Users,
     title: 'Supervisor & Supervision',
     company: 'KCP-3 Print LTD',
-    period: '2021 - 2022',
     description: 'Supervised team activities and ensured smooth workflow in printing and production departments.',
   },
   {
     icon: Coffee,
     title: 'Outlet Manager',
     company: 'The Grind Coffee and Creamer',
-    period: '2020 - 2021',
     description: 'Managed daily operations, customer service and social media presence of the outlet.',
   },
 ]
@@ -77,7 +74,7 @@ export function Experience() {
                     <div className="hidden md:block text-right pr-6 lg:pr-8">
                       <h3 className="text-sm lg:text-lg font-bold text-foreground mb-1 md:mb-2">{exp.title}</h3>
                       <p className="text-accent font-semibold text-xs md:text-sm mb-1">{exp.company}</p>
-                      <p className="text-xs md:text-sm text-muted-foreground mb-2 md:mb-3">{exp.period}</p>
+                      {/* <p className="text-xs md:text-sm text-muted-foreground mb-2 md:mb-3">{exp.period}</p> */}
                       <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{exp.description}</p>
                     </div>
                   )}
@@ -97,7 +94,7 @@ export function Experience() {
                     <div className="hidden md:block pl-6 lg:pl-8">
                       <h3 className="text-sm lg:text-lg font-bold text-foreground mb-1 md:mb-2">{exp.title}</h3>
                       <p className="text-accent font-semibold text-xs md:text-sm mb-1">{exp.company}</p>
-                      <p className="text-xs md:text-sm text-muted-foreground mb-2 md:mb-3">{exp.period}</p>
+                      {/* <p className="text-xs md:text-sm text-muted-foreground mb-2 md:mb-3">{exp.period}</p> */}
                       <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">{exp.description}</p>
                     </div>
                   )}
@@ -106,7 +103,7 @@ export function Experience() {
                   <div className="md:hidden col-span-1 -mt-2">
                     <h3 className="text-sm font-bold text-foreground mb-1">{exp.title}</h3>
                     <p className="text-accent font-semibold text-xs mb-1">{exp.company}</p>
-                    <p className="text-xs text-muted-foreground mb-2">{exp.period}</p>
+                    {/* <p className="text-xs text-muted-foreground mb-2">{exp.period}</p> */}
                     <p className="text-xs text-muted-foreground leading-relaxed">{exp.description}</p>
                   </div>
                 </motion.div>
